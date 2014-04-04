@@ -2,6 +2,6 @@
 
 [[Getting Started With Python Plugins]]
 
-[[Easy Scripting with Jython]]
+[[Easy Python Scripting in Java Plugins]]
 
 [[Existing Python Plugins]]
