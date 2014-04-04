@@ -1,1 +1,1 @@
-This tutorial is determined for developers which want to use some Python script or even library in their Jenkins plugin (written in Java). It is really easy to do, you just have to follow these steps:
+This tutorial is determined for developers which want to use some Python script or even a library in their Jenkins plugin (written in Java). It is really easy to do, you just have to follow these steps:
