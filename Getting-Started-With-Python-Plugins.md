@@ -1,0 +1,1 @@
+This tutorial is determined for developers which want to develop plugins for Jenkins in Python.
