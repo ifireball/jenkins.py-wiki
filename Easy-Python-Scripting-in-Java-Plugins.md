@@ -45,13 +45,19 @@ This tutorial is determined for developers which want to use some Python script 
 5. Init and use PythonExecutor object in your Java class:
     ```java
 ...
-import jenkins.python.*
+import jenkins.python.DataConvertor
+import jenkins.python.PythonExecutor
 ...
 class MyClass {
-    ...
-    private void someMethod {
-        PythonExecutor pexec = new PythonExecutor(this);
-        bool result = pexec.execPythonBool("some_function", "some example", DataConvertor.fromInt(12));
-    }
+        PythonExecutor pexec;
+        ...
+        public MyClass() {
+            pexec = new PythonExecutor(this);
+        }
+        ...
+        private void someMethod() {
+            bool result = pexec.execPythonBool("some_function", "some example", DataConvertor.fromInt(12));
+        }
+        ...
 }
 ```
