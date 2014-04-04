@@ -56,7 +56,7 @@ class MyClass {
         }
         ...
         private void someMethod() {
-            bool result = pexec.execPythonBool("some_function", "some example", DataConvertor.fromInt(12));
+            boolean result = pexec.execPythonBool("some_function", "some example", DataConvertor.fromInt(12));
         }
         ...
 }
