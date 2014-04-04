@@ -27,3 +27,15 @@ This tutorial is determined for developers which want to use some Python script 
 ...
 </build>
 ```
+
+3. Mark all other resource directories which you are using (like _resource_ or _webapp_):
+    ```xml
+<build>
+...
+      <resource>
+        <directory>src/main/resources</directory>
+        <filtering>false</filtering>
+      </resource>
+...
+</build>
+```
