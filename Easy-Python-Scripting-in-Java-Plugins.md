@@ -14,7 +14,7 @@ This tutorial is determined for developers which want to use some Python script 
 </dependencies>
 ```
 
-2. Mark all .py files as resource files in your plugin's _pom.xml_:
+- Mark all .py files as resource files in your plugin's _pom.xml_:
 ```xml
 <build>
 ...
