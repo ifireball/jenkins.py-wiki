@@ -40,7 +40,7 @@ This tutorial is determined for developers which want to use some Python script 
 </build>
 ```
 
-4. Add your python files to the _src/main/python_ directory.
+4. Add your python files to the _src/main/python_ directory. All script should be compatible with the [Jython 2.5.3](http://www.jython.org/).
 
 5. Init and use PythonExecutor object in your Java class:
     ```java
@@ -62,10 +62,13 @@ class MyClass {
 }
 ```
 
-6. Add the python script to the _src/main/python_ directory, which has the same name as your Java class, but in the python file name convention. For the previous example it's _my\_class.py_:
+6. Add the python script to the _src/main/python_ directory, which has the same name as your Java class, but in the python file name convention. For the previous example it's _my\_class.py_. You can also load another modules in this script:
     ```python
 ...
 # src/main/python/my_class.py
+...
+import re
+import mymodule
 ...
 def some_function(text, length):
         if len(text) == length:
