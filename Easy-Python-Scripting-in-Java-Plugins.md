@@ -62,4 +62,15 @@ class MyClass {
 }
 ```
 
-6. Add the python script to the _src/main/python_ directory, which has the same name as your Java class, but in the python name file convention. For the previous example it's _my\_class.py_.
+6. Add the python script to the _src/main/python_ directory, which has the same name as your Java class, but in the python file name convention. For the previous example it's _my\_class.py_:
+    ```python
+...
+# src/main/python/my_class.py
+...
+def some_function(text, length):
+        if len(text) == length:
+            return True
+        else:
+            return False
+...
+```
