@@ -9,3 +9,13 @@ This tutorial is determined for developers which want to use some Python script 
     <version>1.0.2</version>
 </dependency>
 ```
+
+2. Mark all .py files as resource files in your _pom.xml_:
+```xml
+<resource>
+      <directory>src/main</directory>
+      <includes>
+           <include>**/*.py</include>
+      </includes>
+</resource>
+```
