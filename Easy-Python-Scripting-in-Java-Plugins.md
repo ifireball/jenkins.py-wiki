@@ -61,7 +61,7 @@ class MyClass {
         ...
 }
 ```
-    See other _PythonExecutor_ and _DataConvertor_ methods for all possibilities.
+    [See](https://github.com/jenkinsci/jenkins.py/tree/master/python-wrapper/src/main/java/jenkins/python) other _PythonExecutor_ and _DataConvertor_ methods for all possibilities.
 
 6. Add a Python script to the _src/main/python_ directory, which has the same name as your Java class, but in the Python file name convention. For the previous example it's _my\_class.py_. You can also import and use another modules including all Jenkins packages and classes:
     ```python
