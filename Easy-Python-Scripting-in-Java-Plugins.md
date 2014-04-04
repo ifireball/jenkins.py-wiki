@@ -39,3 +39,5 @@ This tutorial is determined for developers which want to use some Python script 
 ...
 </build>
 ```
+
+4. Add your python files to the _src/main/python_ directory.
