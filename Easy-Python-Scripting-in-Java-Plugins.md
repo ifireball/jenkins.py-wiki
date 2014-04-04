@@ -1,7 +1,8 @@
 This tutorial is determined for developers which want to use some Python script or even a library in their Jenkins plugin (written in Java). It is really easy to do, you just have to follow these steps:
 
 
-1. Mark the python-wrapper plugin dependency in your plugin's _pom.xml_:```xml
+1. Mark the python-wrapper plugin dependency in your plugin's _pom.xml_:
+```xml
 <dependencies>
 ...
   <dependency>  
@@ -13,7 +14,8 @@ This tutorial is determined for developers which want to use some Python script 
 </dependencies>
 ```
 
-2. Mark all .py files as resource files in your plugin's _pom.xml_:```xml
+2. Mark all .py files as resource files in your plugin's _pom.xml_:
+```xml
 <build>
 ...
   <resource>
