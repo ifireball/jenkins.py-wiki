@@ -4,4 +4,4 @@
 
 [[Easy Scripting with Jython]]
 
-[[Existing Plugins]]
+[[Existing Python Plugins]]
