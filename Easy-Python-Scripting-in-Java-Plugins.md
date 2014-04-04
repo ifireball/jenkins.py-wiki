@@ -45,8 +45,8 @@ This tutorial is determined for developers which want to use some Python script 
 5. Init and use PythonExecutor object in your Java class:
     ```java
 ...
-import jenkins.python.DataConvertor
-import jenkins.python.PythonExecutor
+import jenkins.python.DataConvertor;
+import jenkins.python.PythonExecutor;
 ...
 class MyClass {
         PythonExecutor pexec;
