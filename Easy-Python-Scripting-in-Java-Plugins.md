@@ -9,7 +9,6 @@ This tutorial is determined for developers which want to use some Python script 
     <artifactId>python-wrapper</artifactId>
     <version>1.0.2</version>
   </dependency>
-...
 </dependencies>
 ```
 
