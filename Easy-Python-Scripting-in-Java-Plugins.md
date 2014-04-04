@@ -5,11 +5,11 @@ This tutorial is determined for developers which want to use some Python script 
     ```xml
 <dependencies>
 ...
-        <dependency>  
+      <dependency>  
         <groupId>org.jenkins-ci.plugins</groupId>
         <artifactId>python-wrapper</artifactId>
         <version>1.0.2</version>
-        </dependency>
+      </dependency>
 ...
 </dependencies>
 ```
