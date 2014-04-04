@@ -74,3 +74,6 @@ def some_function(text, length):
             return False
 ...
 ```
+
+7. Test the plugin with `$ mvn hpi:run`.
+8. Done.
