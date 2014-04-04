@@ -61,3 +61,5 @@ class MyClass {
         ...
 }
 ```
+
+6. Add the python script to the _src/main/python_ directory, which has the same name as your Java class, but in the python name file convention. For the previous example it's _my\_class.py_.
