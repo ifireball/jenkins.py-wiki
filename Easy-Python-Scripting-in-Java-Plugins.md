@@ -12,10 +12,14 @@ This tutorial is determined for developers which want to use some Python script 
 
 2. Mark all .py files as resource files in your _pom.xml_:
 ```xml
-<resource>
-  <directory>src/main</directory>
-  <includes>
-    <include>**/*.py</include>
-  </includes>
-</resource>
+<build>
+...
+  <resource>
+    <directory>src/main</directory>
+    <includes>
+      <include>**/*.py</include>
+    </includes>
+  </resource>
+...
+</build>
 ```
