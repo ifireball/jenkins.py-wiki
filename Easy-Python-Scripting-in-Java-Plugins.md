@@ -41,3 +41,17 @@ This tutorial is determined for developers which want to use some Python script 
 ```
 
 4. Add your python files to the _src/main/python_ directory.
+
+5. Init and use PythonExecutor object in your Java class:
+    ```java
+...
+import jenkins.python.*
+...
+class MyClass {
+    ...
+    private void someMethod {
+        PythonExecutor pexec = new PythonExecutor(this);
+        bool result = pexec.execPythonBool("some_function", "some example", DataConvertor.fromInt(12));
+    }
+}
+```
