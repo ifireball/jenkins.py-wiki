@@ -18,12 +18,12 @@ This tutorial is determined for developers which want to use some Python script 
     ```xml
 <build>
 ...
-  <resource>
-    <directory>src/main</directory>
-    <includes>
-      <include>**/*.py</include>
-    </includes>
-  </resource>
+    <resource>
+      <directory>src/main</directory>
+      <includes>
+        <include>**/*.py</include>
+      </includes>
+    </resource>
 ...
 </build>
 ```
