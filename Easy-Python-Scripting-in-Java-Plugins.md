@@ -62,7 +62,7 @@ class MyClass {
 }
 ```
 
-6. Add the python script to the _src/main/python_ directory, which has the same name as your Java class, but in the Python file name convention. For the previous example it's _my\_class.py_. You can also import and use another modules including all Jenkins packages and classes:
+6. Add a Python script to the _src/main/python_ directory, which has the same name as your Java class, but in the Python file name convention. For the previous example it's _my\_class.py_. You can also import and use another modules including all Jenkins packages and classes:
     ```python
 ...
 # src/main/python/my_class.py
