@@ -2,7 +2,7 @@ This tutorial is determined for developers which want to use some Python script 
 
 
 1. Mark the python-wrapper plugin dependency in your plugin's _pom.xml_:
-```xml
+    ```xml
 <dependencies>
 ...
   <dependency>  
@@ -15,7 +15,7 @@ This tutorial is determined for developers which want to use some Python script 
 ```
 
 2. Mark all .py files as resource files in your plugin's _pom.xml_:
-```xml
+    ```xml
 <build>
 ...
   <resource>
