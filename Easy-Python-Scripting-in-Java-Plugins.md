@@ -28,7 +28,7 @@ This tutorial is determined for developers which want to use some Python script 
 </build>
 ```
 
-3. Don't forget to determine all other resource directories which you are using (like _resource_ or _webapp_):
+3. Don't forget to determine all other resource directories which you are using (like _resources_ or _webapp_):
     ```xml
 <build>
 ...
