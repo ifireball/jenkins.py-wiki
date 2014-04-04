@@ -1,4 +1,4 @@
-This tutorial is determined for developers which want to use some Python scripts or even a libraries in their Jenkins plugin (written in Java). It's really easy, you just have to follow these steps:
+This tutorial is determined for developers which want to use some Python scripts or even libraries in their Jenkins plugin (written in Java). It's really easy, you just have to follow these steps:
 
 
 1. Mark the python-wrapper plugin dependency in your plugin's _pom.xml_:
