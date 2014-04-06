@@ -13,7 +13,7 @@ There is a runtime library plugin called [python-wrapper](https://wiki.jenkins-c
 
 If your `@Extension` class or its descriptor inherits from the wrapper class instead of the original one, you can use an ability to implement methods in the associated Python script. For example if you are implementing some _Recorder_ extension and it is called `MyRecorder` and this class inherits from `RecorderPW`, there should be attached Python script with name `my_recorder.py` which may or not contain implementations of `Recorder` methods.  
 
-Plugin python-wrapper uses [Jython 2.5.3](http://www.jython.org/docs/) for executing associated Python scripts.
+Plugin python-wrapper uses [Jython 2.5.3](http://www.jython.org/docs/) for executing associated Python scripts.  
   
 <p align="center">
 <img src="http://raw.githubusercontent.com/jenkinsci/jenkins.py/master/concept.png" width="70%" height="70%" />
