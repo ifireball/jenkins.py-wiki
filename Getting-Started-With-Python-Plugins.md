@@ -49,3 +49,50 @@ public ReturnType someMethod(ArgType1 arg1, boolean arg2) {
 
 ### Abstract methods
 If there is some abstract method in the original extension point and you forget to implement it neither in Python or Java, the `PythonWrapperError` runtime error will occur (with an understandable message). This is different from the Java programming, where the abstract method implementation is checked in the compilation time.
+
+### Python plugin project specifics
+There are several differences in the Python plugin project from that written purely in Java:
+1. You have to mark the python-wrapper plugin dependency in your plugin's _pom.xml_:
+    ```xml
+<dependencies>
+...
+      <dependency>  
+        <groupId>org.jenkins-ci.plugins</groupId>
+        <artifactId>python-wrapper</artifactId>
+        <version>1.0.2</version>
+      </dependency>
+...
+</dependencies>
+```
+
+2. You have to mark all .py files as resource files in your plugin's _pom.xml_:
+    ```xml
+<build>
+...
+      <resource>
+        <directory>src/main</directory>
+        <includes>
+          <include>**/*.py</include>
+        </includes>
+      </resource>
+...
+</build>
+```
+
+3. Don't forget to determine all other resource directories which you are using (like _resources_ or _webapp_):
+    ```xml
+<build>
+...
+      <resource>
+        <directory>src/main/resources</directory>
+        <filtering>false</filtering>
+      </resource>
+...
+</build>
+```
+
+4. As previously mentioned, @Extension classes and their descriptors inherits from python wrappers classes (`PW`) instead of original extension points and descriptors.
+
+5. There are Python scripts in the _src/main/python_ directory.
+
+
