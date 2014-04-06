@@ -100,8 +100,8 @@ There are several differences in the Python plugin project from that written pur
 There is a little difference between Python and Java basic types. Here is a table with corresponding Python types for all Java types. Some pairs are more obvious than others. Every Python function which overrides some extension point method should return value in the corresponding type.
 <table>
 <tr>
-  <td>Java type</td>
-  <td>Python type</td>
+  <td><em>Java type</em></td>
+  <td><em>Python type</em></td>
 </tr>
 <tr>
   <td>boolean</td>
