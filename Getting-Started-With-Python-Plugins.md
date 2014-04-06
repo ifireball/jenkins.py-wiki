@@ -161,5 +161,4 @@ You can define `init_plugin()` function in associated Python scripts. This funct
 If you have to call super method of the original extension point or descriptor for some reason, you can do it with special super\* method. E.g. if the original extension point defines `someMethod()`, you can call it by `extension.superSomeMethod()`. This was designed due to a workaround of ugly Java reflection calls.
 
 ### Using Java object for a data serialization
-If you need to save some data, use for it your Java class or most likely its descriptor. Just create public fields in a Java class and access them by the `extension` variable. You will probably need another fields for data mining from the UI (@DataBoundConstructor). See [Existing Python Plugins](https://github.com/jenkinsci/jenkins.py/wiki/Existing-Python-Plugins) for an inspiration.
-
+If you need to save some data, use for it your Java class or most likely its descriptor. Just create public fields in a Java class and access them by the `extension` variable. Descriptors have `save()` and `load()` methods for the data persistence control. Some extension classes like builders are saved automatically. You will probably need another fields for data mining from the UI (@DataBoundConstructor). See [Existing Python Plugins](https://github.com/jenkinsci/jenkins.py/wiki/Existing-Python-Plugins) for an inspiration.
