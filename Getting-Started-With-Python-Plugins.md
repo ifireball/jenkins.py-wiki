@@ -149,3 +149,5 @@ There is a little difference between Python and Java basic types. Here is a tabl
 </tr>
 </table>
 
+## Global variable `extension`
+fefefefe
