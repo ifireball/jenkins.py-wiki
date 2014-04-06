@@ -92,8 +92,8 @@ There are several differences in the Python plugin project from that written pur
 </build>
 ```
 
-4. As previously mentioned, @Extension classes and their descriptors inherits from python wrappers classes (`PW`) instead of original extension points and descriptors.
+4. As previously mentioned, @Extension classes and their descriptors inherits from wrappers (`PW` classes) instead of original extension points and descriptors.
 
-5. There are Python scripts in the _src/main/python_ directory.
+5. There are Python scripts in the _src/main/python_ project directory.
 
 
