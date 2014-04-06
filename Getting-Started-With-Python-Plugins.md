@@ -51,7 +51,8 @@ public ReturnType someMethod(ArgType1 arg1, boolean arg2) {
 If there is some abstract method in the original extension point and you forget to implement it neither in Python or Java, the `PythonWrapperError` runtime error will occur (with an understandable message). This is different from the Java programming, where the abstract method implementation is checked in the compilation time.
 
 ### Python plugin project specifics
-There are several differences in the Python plugin project from that written purely in Java:
+There are several differences in the Python plugin project from that written purely in Java:  
+
 1. You have to mark the python-wrapper plugin dependency in your plugin's _pom.xml_:
     ```xml
 <dependencies>
