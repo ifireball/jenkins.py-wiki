@@ -19,7 +19,7 @@ If your `@Extension` class or its descriptor inherits from the wrapper class ins
   
 ### Java and Python names conventions
 There is a difference between Java and Python names convention. This fact concerns filenames as well as methods/functions names.  
-E.g.: if your Extension class is called `MyClass` and it inherits method `someMethod()` from the extension point, there should be Python script called `my_class.py` and it may have function `some_method()`.
+E.g.: if your Extension class is called `MyClass` and it inherits method `someMethod()` from the extension point, there should be Python script called `my_class.py` and it may contain function `some_method()`.
 
 ### Manual Python execution delegation
 All _public_ and _protected_ methods from the extension point and its parent classes are automatically found in the Python script and used. However, there could be more methods in the @Extension class whose executions have to be delegated to the Python script manually. It can be done by the execPython* methods:
