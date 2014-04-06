@@ -173,7 +173,7 @@ If you need to save some data, use for it your Java class or most likely its des
 *  _Types of the terminal plugin are not visible in Python scripts._  
    The reason is that Python scripts are executed by the parent plugin, python-wrapper, which can not see names in the terminal plugin. This will be probably resolved in the future. If you need to create instances of the extension classes in the Python scripts, you can workaround that by the calling standard `type()` function on an `extension` and its descriptor in the `init_plugin()` function:
    ```python
-   def init_plugin():
+def init_plugin():
        global MyClass
        global MyClassDescriptor
        MyClass = type(extension)
