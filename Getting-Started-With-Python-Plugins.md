@@ -111,5 +111,41 @@ There is a little difference between Python and Java basic types. Here is a tabl
   <td>double</td>
   <td>float</td>
 </tr>
+<tr>
+  <td>float</td>
+  <td>float</td>
+</tr>
+<tr>
+  <td>long</td>
+  <td>long</td>
+</tr>
+<tr>
+  <td>int</td>
+  <td>int</td>
+</tr>
+<tr>
+  <td>short</td>
+  <td>int</td>
+</tr>
+<tr>
+  <td>byte</td>
+  <td>int</td>
+</tr>
+<tr>
+  <td>char</td>
+  <td>str (first char applies)</td>
+</tr>
+<tr>
+  <td>[]</td>
+  <td><a href="http://www.jython.org/docs/library/array.html">array.array</a></td>
+</tr>
+<tr>
+  <td>String</td>
+  <td>str</td>
+</tr>
+<tr>
+  <td>Object</td>
+  <td>object</td>
+</tr>
 </table>
 
