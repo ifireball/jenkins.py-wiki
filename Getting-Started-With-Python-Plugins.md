@@ -48,4 +48,4 @@ public ReturnType someMethod(ArgType1 arg1, boolean arg2) {
 ```
 
 ### Abstract methods
-If there is some abstract method in the original extension point and you forget to implement it neither in Python or Java, the `PythonWrapperError` runtime error will occur (with understandable message). This is different from the Java programming, where the abstract method implementation is checked in the compilation time.
+If there is some abstract method in the original extension point and you forget to implement it neither in Python or Java, the `PythonWrapperError` runtime error will occur (with an understandable message). This is different from the Java programming, where the abstract method implementation is checked in the compilation time.
