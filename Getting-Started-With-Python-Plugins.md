@@ -96,4 +96,19 @@ There are several differences in the Python plugin project from that written pur
 
 5. You have to place all Python scripts to the _src/main/python_ project directory.
 
+### Return types of the Python functions
+There is a little difference between Python and Java basic types. Here is a table with corresponding Python types for all Java types. Some pairs are more obvious than others. Every Python function which overrides some extension point method should return value in the corresponding type.
+<table border="1">
+<tr>
+  <td>Jill</td>
+  <td>Smith</td> 
+  <td>50</td>
+</tr>
+<tr>
+  <td>Eve</td>
+  <td>Jackson</td> 
+  <td>94</td>
+</tr>
+</table>
 
+E.g.: if you implemented function
