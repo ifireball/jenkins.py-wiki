@@ -151,3 +151,6 @@ There is a little difference between Python and Java basic types. Here is a tabl
 
 ### Global variable 'extension'
 In every associated Python script there is automatically set a global variable `extension` which points to the parent Java object. You can use it for calling super methods or for setting/getting fields.
+
+### Using init_plugin() function
+You can define `init_plugin()` function in associated Python scripts. This function is called _after_ the `extension` variable is set, but _before_ any other function is called.
