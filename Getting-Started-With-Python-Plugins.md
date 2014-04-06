@@ -156,3 +156,6 @@ In every associated Python script there is automatically set a global variable `
 
 ### Using init_plugin() function
 You can define `init_plugin()` function in associated Python scripts. This function is called _after_ the `extension` variable is set, but _before_ any other function is called.
+
+### Calling super methods
+If you have to call super method of the original extension point or descriptor for some reason, you can do it with special super\* method. E.g. if the original extension point defines `someMethod()`, you can call it by `extension.superSomeMethod()`. This was designed due to a workaround of ugly Java reflection calls.
