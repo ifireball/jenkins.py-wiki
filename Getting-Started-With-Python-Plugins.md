@@ -32,3 +32,8 @@ public int someOtherMethod(ArgType1 arg1) {
     return execPythonInt("some_other_method", arg1);
 }
 ```
+
+This manual delegation concerns these methods:
+*  Stapler methods (do* ang get* methods which are called on demand of the UI)
+*  Constructors
+*  Interfaces methods (if your extension or its parent class (extension point) implements some interface, but does not implement interface methods)
