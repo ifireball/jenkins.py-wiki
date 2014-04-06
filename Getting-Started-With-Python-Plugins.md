@@ -168,3 +168,14 @@ If you need to save some data, use for it your Java class or most likely its des
    A: Sure, you can implement some methods in Python and others in Java. Remember that the Java implementation overrides the Python implementation.
 *  Q: What modules can I import in associated Python scripts?  
    A: You can import any of [standard Jython modules](http://www.jython.org/docs/library/indexprogress.html). You can also import another Python scripts and libraries from your project's _src/main/python_ folder. You can even import all [Jenkins packages and classes](http://javadoc.jenkins-ci.org/) and work with them like there are normal Python objects.
+
+## Known issues
+*  _Types of the terminal plugin are not visible in Python scripts._
+   The reason is that Python scripts are executed by the parent plugin, python-wrapper, which can not see names in the terminal plugin. This will be probably resolved in the future. If you need to create instances of the extension classes in the Python scripts, you can workaround that by the calling standard `type()` function on an `extension` and its descriptor in the `init_plugin()` function:
+```python
+  def init_plugin():
+      global MyClass
+      global MyClassDescriptor
+      MyClass = type(extension)
+      MyClassDescriptor = type(extension.getDescriptor())
+```
