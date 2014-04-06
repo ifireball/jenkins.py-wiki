@@ -8,4 +8,4 @@ This tutorial is determined for developers which want to develop plugins for Jen
 
 ### How does it work
 The goal of the jenkins.py project is not to provide pure Python plugin development, but to enable to implement every method of the extension or its descriptor in the Python. It means that there must be at least one Java class in every Python plugin, but with no functionality at all. Methods executions are delegated to functions in attached Python scripts.  
-There is a runtime library plugin called [python-wrapper](https://wiki.jenkins-ci.org/display/JENKINS/Python+Wrapper+Plugin) which provides wrappers for every extension point and descriptor in the Jenkins system.
+There is a runtime library plugin called [python-wrapper](https://wiki.jenkins-ci.org/display/JENKINS/Python+Wrapper+Plugin) which provides wrappers for every extension point and descriptor in the Jenkins system. These wrappers have suffix `PW` (e.g. for `Notifier` it is `NotifierPW`) and they are situated in packages `jenkins.python.expoint.*` (for extension points wrappers) and `jenkins.python.descriptor.*` (for descriptors).
