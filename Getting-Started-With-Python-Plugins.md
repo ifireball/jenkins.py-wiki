@@ -17,4 +17,5 @@ If your `@Extension` class or its descriptor inherits from the wrapper class ins
 <img src="http://raw.githubusercontent.com/jenkinsci/jenkins.py/master/concept.png" width="70%" height="70%" />
 </p>
   
-Something.
+### Java and Python names conventions
+There is a difference between Java and Python names convention. This fact concerns filenames as well as methods/functions names. E.g.: If your Extension class is called `MyClass` and it inherits method `someMethod()` from the extension point, there should be Python script called `my_class.py` and it should have function `some_method()`.
