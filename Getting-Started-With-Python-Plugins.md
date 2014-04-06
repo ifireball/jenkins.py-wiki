@@ -149,5 +149,5 @@ There is a little difference between Python and Java basic types. Here is a tabl
 </tr>
 </table>
 
-## Global variable extension
+### Global variable 'extension'
 In every associated Python script there is automatically set a global variable `extension` which points to the parent Java object. You can use it for calling super methods or for setting/getting fields.
