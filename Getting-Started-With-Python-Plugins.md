@@ -166,6 +166,7 @@ If you need to save some data, use for it your Java class or most likely its des
 ## FAQ
 *  _Q: Can I combine Java and Python implementations?_  
    A: Sure, you can implement some methods in Python and others in Java. Remember that the Java implementation overrides the Python implementation.  
+
 *  _Q: What modules can I import in associated Python scripts?_  
    A: You can import any of [standard Jython modules](http://www.jython.org/docs/library/indexprogress.html). You can also import another Python scripts and libraries from your project's _src/main/python_ folder. You can even import all [Jenkins packages and classes](http://javadoc.jenkins-ci.org/) and work with them like they are normal Python objects.
 *  _Q: How can I package, test and release my Python plugin?_  
