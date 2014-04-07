@@ -164,10 +164,20 @@ If you have to call super method of the original extension point or descriptor f
 If you need to save some data, use for it your Java class or most likely its descriptor. Just create public fields in a Java class and access them by the `extension` variable. Descriptors have `save()` and `load()` methods for the data persistence control. Some extension classes like builders are saved automatically. You will probably need another fields for data mining from the UI (set by Stapler's @DataBoundConstructor). See [Existing Python Plugins](https://github.com/jenkinsci/jenkins.py/wiki/Existing-Python-Plugins) for an inspiration.
 
 ## FAQ
-*  Q: Can I combine Java and Python implementations?  
+*  _Q: Can I combine Java and Python implementations?_  
    A: Sure, you can implement some methods in Python and others in Java. Remember that the Java implementation overrides the Python implementation.
-*  Q: What modules can I import in associated Python scripts?  
+*  _Q: What modules can I import in associated Python scripts?_  
    A: You can import any of [standard Jython modules](http://www.jython.org/docs/library/indexprogress.html). You can also import another Python scripts and libraries from your project's _src/main/python_ folder. You can even import all [Jenkins packages and classes](http://javadoc.jenkins-ci.org/) and work with them like they are normal Python objects.
+*  _Q: How can I package, test and release my Python plugin?_  
+   A: Just simply use Maven for that:  
+    ```bash
+    # package
+    mvn package
+    # run and test
+    mvn hpi:run
+    # release
+    mvn release:prepare release:perform
+    ```
 
 ## Known issues
 *  _Types of the terminal plugin are not visible in Python scripts._  
