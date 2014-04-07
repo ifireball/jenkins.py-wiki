@@ -49,7 +49,7 @@ import jenkins.python.DataConvertor;
 import jenkins.python.PythonExecutor;
 ...
 class MyClass {
-        PythonExecutor pexec;
+        private transient PythonExecutor pexec;
         ...
         public MyClass() {
             pexec = new PythonExecutor(this);
