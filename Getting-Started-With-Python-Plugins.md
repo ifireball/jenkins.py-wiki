@@ -40,7 +40,7 @@ This manual delegation concerns these methods:
 *  Constructors
 *  Interfaces methods (if your extension or its parent class (extension point) implements some interface, but does not implement interface methods)  
 
-You should use `DataConvertor` utility if some of the method's arguments has a basic type.
+You should use `DataConvertor` utility if some of the method's arguments has a basic type:
 ```java
 import jenkins.python.DataConvertor;
 ...
