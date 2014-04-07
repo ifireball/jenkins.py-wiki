@@ -170,6 +170,7 @@ If you need to save some data, use for it your Java class or most likely its des
    A: You can import any of [standard Jython modules](http://www.jython.org/docs/library/indexprogress.html). You can also import another Python scripts and libraries from your project's _src/main/python_ folder. You can even import all [Jenkins packages and classes](http://javadoc.jenkins-ci.org/) and work with them like they are normal Python objects.
 *  _Q: How can I package, test and release my Python plugin?_  
    A: Just simply use Maven for that:  
+
     ```bash
     # package
     mvn package
