@@ -60,7 +60,7 @@ class MyClass {
         }
         ...
         private void someMethod() {
-            // call the some_function("some example", 12) in my_class.py file and return the result
+            // call some_function("some example", 12) in my_class.py file and return a result
             boolean result = pexec.execPythonBool("some_function", "some example", DataConvertor.fromInt(12));
         }
         ...
