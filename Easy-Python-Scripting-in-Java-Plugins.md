@@ -44,7 +44,7 @@ This tutorial is determined for developers which want to use some Python scripts
 </build>
 ```
 
-4. Add your Python files to the _src/main/python_ directory. All scripts should be compatible with the [Jython 2.5.3](http://www.jython.org/).
+4. Add your Python files to the _src/main/python_ directory. All scripts should be compatible with the [Jython 2.5.3](http://www.jython.org/docs/).
 
 5. Init and use a PythonExecutor object in your Java class:
     ```java
