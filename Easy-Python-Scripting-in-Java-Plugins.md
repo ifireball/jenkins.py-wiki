@@ -17,6 +17,7 @@ This tutorial is determined for developers which want to use some Python scripts
 2. Mark all .py files as resource files in your plugin's _pom.xml_:
     ```xml
 <build>
+<resources>
 ...
       <resource>
         <directory>src/main</directory>
@@ -25,18 +26,21 @@ This tutorial is determined for developers which want to use some Python scripts
         </includes>
       </resource>
 ...
+</resources>
 </build>
 ```
 
 3. Don't forget to determine all other resource directories which you are using (like _resources_ or _webapp_):
     ```xml
 <build>
+<resources>
 ...
       <resource>
         <directory>src/main/resources</directory>
         <filtering>false</filtering>
       </resource>
 ...
+</resources>
 </build>
 ```
 
