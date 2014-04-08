@@ -71,26 +71,30 @@ There are several differences in the Python plugin project from that written pur
 2. You have to mark all .py files as resource files in your plugin's _pom.xml_:
     ```xml
 <build>
-...
-      <resource>
-        <directory>src/main</directory>
-        <includes>
-          <include>**/*.py</include>
-        </includes>
-      </resource>
-...
+      <resources>
+      ...
+        <resource>
+          <directory>src/main</directory>
+          <includes>
+            <include>**/*.py</include>
+          </includes>
+        </resource>
+      ...
+      </resources>
 </build>
 ```
 
 3. Don't forget to determine all other resource directories which you are using (like _resources_ or _webapp_):
     ```xml
 <build>
-...
-      <resource>
-        <directory>src/main/resources</directory>
-        <filtering>false</filtering>
-      </resource>
-...
+      <resources>
+      ...
+        <resource>
+          <directory>src/main/resources</directory>
+          <filtering>false</filtering>
+        </resource>
+      ...
+      </resources>
 </build>
 ```
 
