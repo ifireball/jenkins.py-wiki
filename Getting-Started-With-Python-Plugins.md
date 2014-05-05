@@ -16,7 +16,7 @@ If your `@Extension` class or its descriptor inherits from the wrapper class ins
 Plugin python-wrapper uses [Jython 2.5.3](http://www.jython.org/docs/) for executing associated Python scripts.  
   
 <p align="center">
-<img src="http://raw.githubusercontent.com/jenkinsci/jenkins.py/master/concept.png" width="70%" height="70%" />
+<img src="http://raw.githubusercontent.com/jenkinsci/jenkins.py/master/concept.png" width="80%" height="80%" />
 </p>
   
 ### Java and Python names conventions
