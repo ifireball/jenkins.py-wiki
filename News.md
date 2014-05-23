@@ -1,3 +1,7 @@
+#### 2014/05/23
+* Python Wrapper Plugin 1.0.3 has been released.
+* This release fixes failures caused by classpaths with spaces. (%20 -> " ")
+
 #### 2014/03/31
 * Python Wrapper Plugin 1.0.2 has been released. This release involves critical bug fixes.  
 
