@@ -8,7 +8,7 @@ This tutorial is determined for developers which want to use some Python scripts
       <dependency>  
         <groupId>org.jenkins-ci.plugins</groupId>
         <artifactId>python-wrapper</artifactId>
-        <version>1.0.2</version>
+        <version>1.0.3</version>
       </dependency>
 ...
 </dependencies>
