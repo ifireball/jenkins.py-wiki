@@ -62,7 +62,7 @@ There are several differences in the Python plugin project from that written pur
       <dependency>  
         <groupId>org.jenkins-ci.plugins</groupId>
         <artifactId>python-wrapper</artifactId>
-        <version>1.0.2</version>
+        <version>1.0.3</version>
       </dependency>
 ...
 </dependencies>
